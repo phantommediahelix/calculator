@@ -1,0 +1,155 @@
+Public Class Form1
+    Dim a, b, r As Integer
+    Private Sub a1_Click(sender As Object, e As EventArgs) Handles a1.Click
+        If Timer1.Enabled = True Then
+            history2.Text = history2.Text + "1"
+        Else
+
+            history1.Text = history1.Text + "1"
+        End If
+    End Sub
+
+    Private Sub a2_Click(sender As Object, e As EventArgs) Handles a2.Click
+        If Timer1.Enabled = True Then
+            history2.Text = history2.Text + "2"
+        Else
+
+            history1.Text = history1.Text + "2"
+        End If
+    End Sub
+
+    Private Sub divide_Click(sender As Object, e As EventArgs) Handles divide.Click
+        Timer1.Enabled = True
+        operation.Text = "÷"
+    End Sub
+
+    Private Sub multiply_Click(sender As Object, e As EventArgs) Handles multiply.Click
+        Timer1.Enabled = True
+        operation.Text = "x"
+    End Sub
+
+    Private Sub minus_Click(sender As Object, e As EventArgs) Handles minus.Click
+        Timer1.Enabled = True
+        operation.Text = "-"
+    End Sub
+
+    Private Sub add_Click(sender As Object, e As EventArgs) Handles add.Click
+        Timer1.Enabled = True
+        operation.Text = "+"
+    End Sub
+
+    Private Sub a3_Click(sender As Object, e As EventArgs) Handles a3.Click
+        If Timer1.Enabled = True Then
+            history2.Text = history2.Text + "3"
+        Else
+
+            history1.Text = history1.Text + "3"
+        End If
+    End Sub
+
+    Private Sub a9_Click(sender As Object, e As EventArgs) Handles a9.Click
+        If Timer1.Enabled = True Then
+            history2.Text = history2.Text + "9"
+        Else
+
+            history1.Text = history1.Text + "9"
+        End If
+    End Sub
+
+    Private Sub a8_Click(sender As Object, e As EventArgs) Handles a8.Click
+        If Timer1.Enabled = True Then
+            history2.Text = history2.Text + "8"
+        Else
+
+            history1.Text = history1.Text + "8"
+        End If
+    End Sub
+
+    Private Sub a7_Click(sender As Object, e As EventArgs) Handles a7.Click
+        If Timer1.Enabled = True Then
+            history2.Text = history2.Text + "7"
+        Else
+
+            history1.Text = history1.Text + "7"
+        End If
+    End Sub
+
+    Private Sub a4_Click(sender As Object, e As EventArgs) Handles a4.Click
+        If Timer1.Enabled = True Then
+            history2.Text = history2.Text + "4"
+        Else
+
+            history1.Text = history1.Text + "4"
+        End If
+    End Sub
+
+    Private Sub a5_Click(sender As Object, e As EventArgs) Handles a5.Click
+        If Timer1.Enabled = True Then
+            history2.Text = history2.Text + "5"
+        Else
+
+            history1.Text = history1.Text + "5"
+        End If
+    End Sub
+
+    Private Sub a6_Click(sender As Object, e As EventArgs) Handles a6.Click
+        If Timer1.Enabled = True Then
+            history2.Text = history2.Text + "6"
+        Else
+
+            history1.Text = history1.Text + "6"
+        End If
+    End Sub
+
+    Private Sub a0_Click(sender As Object, e As EventArgs) Handles a0.Click
+        If Timer1.Enabled = True Then
+            history2.Text = history2.Text + "0"
+        Else
+
+            history1.Text = history1.Text + "0"
+        End If
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If operation.Text = "÷" Then
+            a = Val(history1.Text)
+            b = Val(history2.Text)
+            r = a / b
+            result.Text = r
+
+        End If
+        If operation.Text = "x" Then
+            a = Val(history1.Text)
+            b = Val(history2.Text)
+            r = a * b
+            result.Text = r
+        End If
+        If operation.Text = "+" Then
+            a = Val(history1.Text)
+            b = Val(history2.Text)
+            r = a + b
+            result.Text = r
+        End If
+        If operation.Text = "-" Then
+            a = Val(history1.Text)
+            b = Val(history2.Text)
+            r = a - b
+            result.Text = r
+        End If
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        history1.Text = ""
+        history2.Text = ""
+        operation.Text = ""
+        Timer1.Stop()
+
+        result.Text = ""
+    End Sub
+  
+  
+End Class
