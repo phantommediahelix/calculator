@@ -1,3 +1,7 @@
+'Made by Nicholas Carlson
+'Under MIT License
+'Allowed to reuse or repurpose
+
 Public Class Form1
     Dim a, b, r As Integer
     Private Sub a1_Click(sender As Object, e As EventArgs) Handles a1.Click
